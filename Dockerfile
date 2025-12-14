@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY vtide/ ./vtide/
+#COPY vtide/ ./vtide/
 COPY final_tide_constituent.py ./
 COPY pytmd_tide_model.py ./
 COPY main.py ./

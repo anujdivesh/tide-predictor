@@ -2,7 +2,7 @@ import json
 import numpy as np
 import os
 import sys
-from tideAnalysis.utils.pytmd_tide_model import TideModel
+from pytmd_tide_model import TideModel
 
 # Function to get constituents for any lat/lon
 def get_constituents_by_latlon(lat, lon):

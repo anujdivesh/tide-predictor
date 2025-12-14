@@ -7,6 +7,7 @@ services:
       - "8001:8000"
     volumes:
       - ./vtide:/app/vtide
+      - /home/divesha/tide_model:/home/divesha/tide_model
       - ./final_tide_constituent.py:/app/final_tide_constituent.py
       - ./pytmd_tide_model.py:/app/pytmd_tide_model.py
       - ./main.py:/app/main.py
