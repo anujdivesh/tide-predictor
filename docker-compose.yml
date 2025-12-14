@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  tide-api:
+    build: .
+    container_name: tide_api
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./vtide:/app/vtide
+      - ./final_tide_constituent.py:/app/final_tide_constituent.py
+      - ./pytmd_tide_model.py:/app/pytmd_tide_model.py
+      - ./main.py:/app/main.py
+    environment:
+      - PYTHONUNBUFFERED=1
